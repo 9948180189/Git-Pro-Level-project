@@ -8,3 +8,4 @@ sum=a+b
 sum=7
 
 x=a-b
+s=a*b
