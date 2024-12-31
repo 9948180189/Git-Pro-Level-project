@@ -6,3 +6,5 @@ x=2+5
 
 sum=a+b
 sum=7
+
+x=a-b
