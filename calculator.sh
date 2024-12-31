@@ -1,6 +1,8 @@
 #!/bin/bash
 
 #Addition functionality
+
+checking merge work
 x=a+b
 x=2+5
 
