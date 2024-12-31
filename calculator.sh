@@ -1,2 +1,3 @@
-x=a+b
-y=a-b
+#!/bin/bash
+
+#Addition functionality
