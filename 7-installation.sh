@@ -7,8 +7,6 @@ if [ $USERID -ne 0 ]
  then
          echo "please run the script with Root privileges"
          exit 1
-    else
-     echo "are you in root privileges"
 fi
 
 dnf list instaled git
