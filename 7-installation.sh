@@ -1,15 +1,3 @@
-#!/bin/iibash
-
-USERID=$(id -u)
-#echo "user ID is: $USERID"
-
-if [ $USERID -ne 0 ]
- then
-         echo "please run the script with Root privileges"
-         exit 1
-
-fi
-
 dnf list instaled git
 
 if [ $? -ne 0 ]
@@ -18,16 +6,16 @@ if [ $? -ne 0 ]
      dnf install git -y
      if
      then
-	 echo "git installaion is not success..check it"
-	 exit 1
+         echo "git installaion is not success..check it"
+         exit 1
      else
-	     echo "git installation is success"
+             echo "git installation is success"
 
-     fi	     
+     fi
   else
      echo "Git is Already installed, nothing to do."
 fi
- 
+
 dnf list installed mysql
 
 if [ $? -ne 0 ]
@@ -42,6 +30,7 @@ if [ $? -ne 0 ]
          else
           echo "Mysql server installed successful"
          fi
- else 
+ else
     echo "mysql is already installed"
  fi
+
