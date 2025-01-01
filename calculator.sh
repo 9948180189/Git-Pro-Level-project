@@ -10,5 +10,5 @@ sum=a+b
 sum=7
 
 x=a-b
-y=20-5
-div=15
+y=25-5
+div=20
