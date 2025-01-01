@@ -1,4 +1,4 @@
 #!/bin/bash
-echo "Hi HariHow Are you"
+echo "Happy New Year 2025"
 
 
