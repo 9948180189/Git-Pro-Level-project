@@ -1,3 +1,16 @@
+#!/bin/iibash
+
+USERID=$(id -u)
+#echo "user ID is: $USERID"
+
+if [ $USERID -ne 0 ]
+ then
+         echo "please run the script with Root privileges"
+         exit 1
+    else
+     echo "are you in root privileges"
+fi
+
 dnf list instaled git
 
 if [ $? -ne 0 ]
@@ -33,4 +46,6 @@ if [ $? -ne 0 ]
  else
     echo "mysql is already installed"
  fi
+
+
 
