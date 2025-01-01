@@ -10,12 +10,12 @@ if [ $USERID -ne 0 ]
 
 fi
 
-dnf list instaled gittt
+dnf list instaled git
 
 if [ $? -ne 0 ]
   then
      echo "Git is not installed, going to install it."
-     dnf install gittt -y
+     dnf install git -y
      if
      then
 	 echo "git installaion is not success..check it"
@@ -27,4 +27,21 @@ if [ $? -ne 0 ]
   else
      echo "Git is Already installed, nothing to do."
 fi
+ 
+dnf list installed mysql
 
+if [ $? -ne 0 ]
+     then
+         echo "Mysql installaion is not success..check it"
+         dnf install mysql -y
+         if [ $? -ne 0 ]
+         then
+            echo "mysql installation is failure .please check it"
+
+         exit 1
+         else
+          echo "Mysql server installed successful"
+         fi
+ else 
+    echo "mysql is already installed"
+ fi
